@@ -1,0 +1,32 @@
+Consider a method that is supposed to return the number of even digits in an integer. Which of the following sets of sample inputs is the best?
+
+31, 255, 1
+240, 1080, 0, 42
+31, 65, 84, 29
+5782, 374, 18642, -7135342
+1, 589, 409512, -6158, 0
+
+--> Input 1, 589, 409512, -6158, 0 is good as it has a combination of positive, negative, odd and even numbers. It tests boundary conditions 
+
+
+ public static boolean hasDuplicates(int[] data){
+
+ }
+ input = {
+     input1 : [0],
+     input2 : [0,1,2,3,0],
+     input3 : [-1, 0 , 1 , 2 , 3], 
+     input4 : [1 , 2 , 3 , 4 , 415155], 
+     input5 : [0, 0, 123, 6],
+     input6 : [4,5,6,6]
+ }
+
+ What value is the above method expected to return for the array {10, 70, 20, 90}? --> 190, 3 
+ assertEquals(1, Question4b.countInRange(a, 85, 95)); 
+
+ The bug is that the range is inclusive [10, 70] will return 0 but should be two 
+
+  int[] c = [10, 20, 30, 0]; 
+  int[] d = [-1, -2, -3 , -4]
+  int[] e = [-4, -3, -2, -1, 0]  
+
